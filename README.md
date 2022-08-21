@@ -79,7 +79,6 @@ $ python app.py
 
 Sources:
 
-https://github.com/evagian/Myopia-study-classification-logistic-regression-R
 
 
 Tools & languages: JavaScript, HTML, Python Flask, Jupyter Notebook, MongoDB

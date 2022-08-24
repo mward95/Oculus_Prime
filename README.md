@@ -1,5 +1,18 @@
 # Myopia in Children
 ![](images/josh-calabrese-glasses-unsplash.jpg)
+
+
+## Table of Contents
+
+- [Background](#background)
+- [Installation](#installation)
+- [Getting Started](#getting)
+- [Extract, Transform, Load](#extract,transform,load)
+- [Features](#features)
+- [Credits](#credits)
+- [Badges](#badges)
+
+
 ## Background
 
 ### What is Myopia? 
@@ -39,29 +52,18 @@ SOURCE: Hosmer, D.W., Lemeshow, S. and Sturdivant, R.X. (2013) Applied Logistic 
 
 ![](images\human-eye2.jpg)
 
-## Table of Contents
+## Purpose
 
-- [Background](#background)
-- [Installation](#installation)
-- [Getting Started](#getting)
-- [Extract, Transform, Load](#extract,transform,load)
-- [Features](#features)
-- [Credits](#credits)
-- [Badges](#badges)
 
-## Installation:
+## Predictions
 
-To be able to run the jupyter notebook and VS Code you will need the following imports
+We have two predictions for supervised machine learning models. We hypothesize that Random Forest Classification and Logistic Regression models will perform with high accuracies. A Random Forest model should be able to correctly bin the data due to uncorrelated features categorizing the input. Also, for unsupervised machine learning, we hypothesize that a Neural Network model will perform with the highest accuracy and provide the best model since we will be able to fit and hypertune it.
 
-- BeautifulSoup
-- Matplotlib
-- Numpy
-- Pandas
-- Scipy.stats
-- Seaborn
-- Splinter
-- Sqlachemy
-- Plotly
+We are predicting that a Linear Regression model would perform the worst due to allowing outliers to effect its predictive outcomes.
+
+Our goal is to get as close to FDA standards as possible because we are working with a medical dataset. Our machine learning experiments will attempt to build and test a model that will have accuracy in the range of 90-95%
+
+![](images/david-travis-glasses-unsplash.jpg)
 
 ## Installation:
 
@@ -76,6 +78,7 @@ To be able to run the jupyter notebook and VS Code you will need the following i
 - Splinter
 - Sqlachemy
 - Plotly
+
 
 ## Getting Started
 You will need to run dashboard on your local server
@@ -108,6 +111,8 @@ Images:
 https://unsplash.com/photos/qmnpqDwla_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 https://www.freepik.com/free-vector/realistic-eye-anatomy-infographics_6405883.htm#page=3&query=human%20eye%20anatomy&position=0&from_view=search
+
+https://unsplash.com/photos/aVvZJC0ynBQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
 
 
 

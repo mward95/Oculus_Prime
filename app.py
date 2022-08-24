@@ -8,13 +8,15 @@ import os
 import psycopg2
 from flask import Flask, render_template, jsonify
 from flask_sqlalchemy import SQLAlchemy
-
+# import MySQLdb
 ################################################## 
 # Flask Setup#################################################
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgress@localhost:5432/postgres"
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgress@localhost:5432/postgres"
 # jdbc:postgresql://database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://postgres:mypostgressdb@database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:mypostgressdb@database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 db.create_all
@@ -46,18 +48,29 @@ def home():
     return render_template("index1.html")
 
 @app.route('/myopia') 
-def myopic_st():
-        usbasinprod = myopia.query.all()
-        results1 =[
+def myopic_da():
+        myopdata = myopia.query.all()
+        results =[
             {
-                "Basin_Name": prod.basins,
-                "Date": prod.period,
-                "Oil_Prod": prod.value,
-                "Size": prod.size,
-            } for prod in usbasinprod]
-
-        # return {"count": len(results), "us_rig_count": results}
-        return jsonify(results1)
+                "ID": myop.id,
+                "Age": myop.age,
+                "Gender": myop.gender,
+                "Spehq": myop.spheq, 
+                "AL": myop.al, 
+                "ACD": myop.al, 
+                "LT": myop.lt, 
+                "VCD": myop.vcd, 
+                "SportHR": myop.sporthr, 
+                "ReadHR": myop.readhr, 
+                "CompHR": myop.comphr, 
+                "StudyHR": myop.studyhr, 
+                "TvHR": myop.tvhr, 
+                "DiopterHR": myop.diopterhr, 
+                "MomMyopic": myop.mommy,
+                "DadMyopic": myop.dadmy,
+                "Myopic_yesno": myop.myopic,
+            } for myop in myopdata]
+        return jsonify(results)
 
 if __name__ == "__main__":
     app.run(debug=True)

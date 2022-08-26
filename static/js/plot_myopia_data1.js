@@ -1,18 +1,18 @@
 // async function consolidated()
-var idxn = []
-var idxy = []
-var alxn = [] 
-var idxall =[]
-var dipxn =[]
-var dipxy=[]
-var myopxn =[]
-var alxy =[]
-var dadmxn =[]
-var mommxn =[]
+var idx1n = []
+var idx1y = []
+var alx1n = [] 
+var idx1all =[]
+var dipx1n =[]
+var dipx1y=[]
+var myopx1n =[]
+var alx1y =[]
+var dadmx1n =[]
+var mommx1n =[]
 var trace1 = []
 var layout =[]
-var alxym =[], idxym=[], dipxym =[]
-var alxyd =[], idxyd=[], dipxyd =[]
+var alx1ym =[], idx1ym=[], dipx1ym =[]
+var alx1yd =[], idx1yd=[], dipx1yd =[]
 // path = "data\json-fixer.json"
 
 // C:\BC_Classes\Homeworks\project_4\repo_etc\data\myopia.json
@@ -21,99 +21,99 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
     data.forEach((list) => {
         // console.log(list)
         
-        let myopx = list.MYOPIC
-        let idx = list.ID
-        let alx = list.AL
-        let dipx = list.DIOPTERHR
-        let dadmx = list.DADMY
-        let mommx = list.MOMMY
-        if (myopx == 0){
-            alxn.push(alx)
-            idxn.push(idx)
-            dipxn.push(dipx/1.75)
+        let myopx1 = list.MYOPIC
+        let idx1 = list.ID
+        let alx1 = list.AL
+        let dipx1 = list.DIOPTERHR
+        let dadmx1 = list.DADMY
+        let mommx1 = list.MOMMY
+        if (myopx1 == 0){
+            alx1n.push(alx1)
+            idx1n.push(idx1)
+            dipx1n.push(dipx1/1.75)
         }
         
         
-        if(myopx == 1){
-            if (mommx == 1 && dadmx == 1){
+        if(myopx1 == 1){
+            if (mommx1 == 1 && dadmx1 == 1){
                
-                    alxy.push(alx)
-                    idxy.push(idx)
-                    dipxy.push(dipx/1.75)
+                    alx1y.push(alx1)
+                    idx1y.push(idx1)
+                    dipx1y.push(dipx1/1.75)
             }
         }
 
-        if(myopx == 1){
-            if (mommx == 1 && dadmx == 0){
-                    alxym.push(alx)
-                    idxym.push(idx)
-                    dipxym.push(dipx/1.75)
+        if(myopx1 == 1){
+            if (mommx1 == 1 && dadmx1 == 0){
+                    alx1ym.push(alx1)
+                    idx1ym.push(idx1)
+                    dipx1ym.push(dipx1/1.75)
             }
         }
-        if(myopx == 1){
-            if (mommx == 0 && dadmx == 1){
-                    alxyd.push(alx)
-                    idxyd.push(idx)
-                    dipxyd.push(dipx/1.75)
+        if(myopx1 == 1){
+            if (mommx1 == 0 && dadmx1 == 1){
+                    alx1yd.push(alx1)
+                    idx1yd.push(idx1)
+                    dipx1yd.push(dipx1/1.75)
 
             }
         }
-        idxall.push(idx)
-        myopxn.push(myopx)
+        idx1all.push(idx1)
+        myopx1n.push(myopx1)
                 
                      
     });
     let t1b = {
-        x: idxn,
-        y: alxn,
+        x: idx1n,
+        y: alx1n,
         mode: 'markers',
-        name: 'Ax Lngth of kids without Myopia - Size DIOPTERHR',
+        name: 'AL of kids without Myopia',
         marker:{
-            size: dipxn, 
-            colorscale: 'Earth',
+            size: dipx1n, 
+            color: '#a5a996',
         }
     }
     trace1.push(t1b)
 
     let t2b = {
-        x: idxy,
-        y: alxy,
+        x: idx1y,
+        y: alx1y,
         mode: 'markers',
-        name: 'Ax Lngth of kids with Myopia - Size DIOPTERHR (Mom & Dad Miopic)',
+        name: 'AL - kids with Myopia - (Mom & Dad Miopic)',
         marker:{
-            size: dipxy, 
+            size: dipx1y, 
             color: '#e30022',
         }
     }
     trace1.push(t2b)
 
     let t3b = {
-        x: idxym,
-        y: alxym,
+        x: idx1ym,
+        y: alx1ym,
         mode: 'markers',
-        name: 'Ax Lngth of kids with Myopia - Size DIOPTERHR (Mom Miopic)',
+        name: 'AL - kids with Myopia (Mom Miopic)',
         marker:{
-            size: dipxym, 
+            size: dipx1ym, 
             color: '#713fff',
         }
     }
     trace1.push(t3b)
 
     let t4b = {
-        x: idxyd,
-        y: alxyd,
+        x: idx1yd,
+        y: alx1yd,
         mode: 'markers',
-        name: 'Ax Lngth of kids with Myopia - Size DIOPTERHR (Dad Miopic)',
+        name: 'AL -  kids with Myopia (Dad Miopic)',
         marker:{
-            size: dipxyd, 
+            size: dipx1yd, 
             color: '#a6d608',
         }
     }
     trace1.push(t4b)
 
     // let t5b = {
-    //     x: idxall,
-    //     y: myopxn,
+    //     x: idx1all,
+    //     y: myopx1n,
     //     name: 'Myopic Dad',
     //     type: 'bar', 
     //     yaxis: "y2",
@@ -128,16 +128,21 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
     var layout = {
         xaxis: {
             // type: 'date',
+            autotick: false,
+            ticks: 'outside', 
+            dtick: 20,
             title: 'Pateint ID',
             xaxis: {
                 range: [0, 620],
             // tickmode:'auto', 
-            dtick:20
             },
         },
         
         yaxis: {
-            title: 'Axial Lenght & Time spent with Diopter activities', 
+            autotick: false,
+            ticks: 'outside', 
+            dtick: .5,
+            title: 'AL & DopterHR', 
             range: [19,25],
             // autorange: true,
         },
@@ -150,10 +155,10 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'Axial Lenght & Time spent with Diopter activities for all pateints - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
+        title:'Axial Lenght (AL) & Hrs of Diopter activities - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
     }
     console.log(trace1)
     Plotly.newPlot('plot1', trace1, layout)
-    console.log(data)
+    
     
 });

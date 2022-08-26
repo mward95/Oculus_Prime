@@ -1,8 +1,12 @@
 // async function consolidated()
 var idxn = []
+var idxy = []
 var alxn = [] 
+var idxall =[]
 var dipxn =[]
+var dipxy=[]
 var myopxn =[]
+var alxy =[]
 var dadmxn =[]
 var mommxn =[]
 var trace = []
@@ -14,14 +18,25 @@ var layout =[]
 d3.json("./static/data1/json-fixer.json").then(function(data){
     data.forEach((list) => {
         // console.log(list)
-        let idx = list.ID
-        idxn.push(idx)
-        let alx = list.AL
-        alxn.push(alx)
-        let dipx = list.DIOPTERHR
-        dipxn.push(dipx/1.75)
+        
         let myopx = list.MYOPIC
+        let idx = list.ID
+        let alx = list.AL
+        let dipx = list.DIOPTERHR
+        if (myopx == 0){
+            alxn.push(alx)
+            idxn.push(idx)
+            dipxn.push(dipx/1.75)
+        }
+        else{
+            alxy.push(alx)
+            idxy.push(idx)
+            dipxy.push(dipx/1.75)
+        }
+        
+        idxall.push(idx)
         myopxn.push(myopx)
+                
         let dadmx = list.DADMY
             if (!dadmx == 0){
                 dadmxn.push(dadmx-.25)
@@ -43,60 +58,76 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
         x: idxn,
         y: alxn,
         mode: 'markers',
-        name: 'Axial Lenght with Size as DIOPTERHR',
+        name: 'AL of kids without Myopia',
         marker:{
             size: dipxn, 
-            colorscale: 'Earth',
+            color: '#a5a996',
         }
     }
     trace.push(t1)
-    console.log(trace)
-    // console.log(alxn)
-    console.log(data)
 
-    let t2 = {
-        x: idxn,
-        y: myopxn,
-        name: 'Myopic Pateint',
-        type: 'bar', 
-        yaxis: "y2",
-        color: 'rgb(255,0,0)'
+    let t1a = {
+        x: idxy,
+        y: alxy,
+        mode: 'markers',
+        name: 'AL of kids with Myopia',
+        marker:{
+            size: dipxy, 
+            color: '#e30022',
+        }
     }
-    trace.push(t2)
+    trace.push(t1a)
+
+    // let t2 = {
+    //     x: idxall,
+    //     y: myopxn,
+    //     name: 'Myopic Pateint',
+    //     type: 'bar', 
+    //     yaxis: "y2",
+    //     color: 'rgb(255,0,0)'
+    // }
+    // trace.push(t2)
     
-    let t3 = {
-        x: idxn,
-        y: dadmxn,
-        name: 'Myopic Dad',
-        type: 'bar', 
-        yaxis: "y2",
-        color: '3fd7ff'
-    }
-    trace.push(t3)
+    // let t3 = {
+    //     x: idxall,
+    //     y: dadmxn,
+    //     name: 'Myopic Dad',
+    //     type: 'bar', 
+    //     yaxis: "y2",
+    //     color: '3fd7ff'
+    // }
+    // trace.push(t3)
 
-    let t4 = {
-        x: idxn,
-        y: mommxn,
-        name: 'Myopic Mom',
-        type: 'bar', 
-        yaxis: "y2",
-        color: '#ff3fae'
-    }
-    trace.push(t4)
+    // let t4 = {
+    //     x: idxall,
+    //     y: mommxn,
+    //     name: 'Myopic Mom',
+    //     type: 'bar', 
+    //     yaxis: "y2",
+    //     color: '#ff3fae'
+    // }
+    // trace.push(t4)
 
     var layout = {
         xaxis: {
             // type: 'date',
+            autotick: false,
+            ticks: 'outside', 
+            tick0: 0,
+            dtick: 20,
             title: 'Pateint ID',
             xaxis: {
                 range: [0, 620],
             // tickmode:'auto', 
-            dtick:20
+            
             },
         },
         
         yaxis: {
-            title: 'Axial Lenght & Time spent with Diopter activities', 
+            autotick: false,
+            ticks: 'outside', 
+            dtick: .5,
+            title: 'AL & DiopterHR', 
             range: [19,25],
             // autorange: true,
         },
@@ -109,9 +140,11 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'Axial Lenght & Time spent with Diopter activities for all pateints - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
+        title:'Axial Lenght (AL) & Time spent with Diopter activities for all pateints - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
     }
+    console.log(trace)
     Plotly.newPlot('plot', trace, layout)
+    console.log(data)
     
 });
 // consolidated()

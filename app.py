@@ -13,10 +13,10 @@ from flask_sqlalchemy import SQLAlchemy
 # Flask Setup#################################################
 app = Flask(__name__)
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgress@localhost:5432/postgres"
-# jdbc:postgresql://database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://postgres:mypostgressdb@database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:mypostgressdb@database-1.crlshbglbzmo.us-east-1.rds.amazonaws.com/postgres'
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:{password}@localhost:5432/postgres"
+
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{username}:{password}@{end_point}}/{database_name}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 db.create_all

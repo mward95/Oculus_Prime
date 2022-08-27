@@ -141,7 +141,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'With both Parents being Myopic - List of children turned out to be Miopic'
+        title:'<b>Children with/without Myopia with <i> Both Parents Myopic</i> <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b>'
     }
     console.log(trace6)
     Plotly.newPlot('plot6', trace6, layout)

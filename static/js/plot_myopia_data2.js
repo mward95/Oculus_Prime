@@ -130,8 +130,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             ticks: 'outside', 
             dtick: .5,
             title: 'SPHEQ & DiopterHR', 
-            // range: [19,25],
-            autorange: true,
+            range: [-1,5],
+            // autorange: true,
         },
         yaxis2:{
             title: "Myopic Patients ",
@@ -142,7 +142,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'Spherical Equivalent Refraction & Hrs of Diopter ctivities - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
+        title:'<b>Children with/without Myopia vs. Spherical Equivalent Refraction <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b>'
+        
     }
     console.log(trace2)
     Plotly.newPlot('plot2', trace2, layout)

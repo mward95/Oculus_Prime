@@ -139,8 +139,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             ticks: 'outside', 
             dtick: .1,
             title: 'ACD & DiopterHR', 
-            // range: [19,25],
-            autorange: true,
+            range: [2.7, 4.5],
+            // autorange: true,
         },
         yaxis2:{
             title: "Myopic Patients ",
@@ -151,7 +151,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'Anterior Chamber Depth (ACD) & Hrs of Diopter activities - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
+        title:'<b>Children with/without Myopia vs. Anterior Chamber Depth (ACD) <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b>'
+        
     }
     console.log(trace3)
     Plotly.newPlot('plot3', trace3, layout)

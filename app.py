@@ -16,7 +16,7 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:{password}@localhost:5432/postgres"
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{username}:{password}@{end_point}}/{database}'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://{username}:{password}@{end_point}}/{database_name}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 db.create_all

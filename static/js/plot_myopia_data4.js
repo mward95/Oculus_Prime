@@ -23,7 +23,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
         let idx4 = list.ID
         let vcdx = list.VCD
         let dipx4 = list.DIOPTERHR
-        let dadmx4 = list.DADMY
+        let dadmx3 = list.DADMY
         let mommx4 = list.MOMMY
         if (myopx4 == 0){
             vcdxn.push(vcdx)
@@ -33,7 +33,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
         
         
         if(myopx4 == 1){
-            if (mommx4 == 1 && dadmx == 1){
+            if (mommx4 == 1 && dadmx3 == 1){
                
                     vcdxy.push(vcdx)
                     idx4y.push(idx4)
@@ -42,14 +42,14 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
         }
 
         if(myopx4 == 1){
-            if (mommx4 == 1 && dadmx4 == 0){
+            if (mommx4 == 1 && dadmx3 == 0){
                     vcdxym.push(vcdx)
                     idx4ym.push(idx4)
                     dipx4ym.push(dipx4/1.75)
             }
         }
         if(myopx4 == 1){
-            if (mommx4 == 0 && dadmx4 == 1){
+            if (mommx4 == 0 && dadmx3 == 1){
                     vcdxyd.push(vcdx)
                     idx4yd.push(idx4)
                     dipx4yd.push(dipx4/1.75)
@@ -139,8 +139,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             ticks: 'outside', 
             dtick: .25,
             title: 'VCD & DiopterHR', 
-            range: [13,17.75],
-            // autorange: true,
+            // range: [19,25],
+            autorange: true,
         },
         yaxis2:{
             title: "Myopic Patients ",
@@ -151,7 +151,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title:'<b>Children with/without Myopia vs. Vitreous Chamber Depth (VCD) <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b>'
+        title:'Vitreous Chamber Depth (VCD) & Hrs of Diopter activities - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
     }
     console.log(trace4)
     Plotly.newPlot('plot4', trace4, layout)

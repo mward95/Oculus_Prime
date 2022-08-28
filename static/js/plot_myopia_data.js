@@ -140,8 +140,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title: '<b>Children with/without Myopia vs. Axial Lenght (AL) <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b> <i></i>'
-        // layout = go.Layout(title='<b>Bold</b> <i>animals</i>')
+        title:'Axial Lenght (AL) & Time spent with Diopter activities for all pateints - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
     }
     console.log(trace)
     Plotly.newPlot('plot', trace, layout)

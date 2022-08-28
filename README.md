@@ -82,72 +82,29 @@ Accounts needed:
 Setups:
 - AWS:
     - S3
+    - Datasets
 - Google:
     - Google Colaboratory (open through Google Drive)
 
-Tools & languages: PySpark, Google Colab, SQL, postgres, PgAdmin, JavaScript, Plotly, HTML, matplotlib, Seaborn, Sci-Kit Learn
+Tools & languages: JavaScript, HTML, Python Flask, Google Colab, SQL, postgres, PgAdmin
+
 
 ## Extract, Transform, Load
 
-1. Clone this repository to your machine 
-
-Create your S3 bucket
-
-2. Open AWS (https://aws.amazon.com/) and sign in to your account (make sure you have root user selected)
-3. Find and click S3 in the the Services or search for S3 in the search bar and select it
-4. Click 'Create bucket'
-
-General Configuration
-
-5. Name your bucket (anything you like but we chose 'myopia' for this project) under 'Bucket name' it has to be a name that is not in use
-6. Leave 'AWS Region' as is do not reset (only reset if it does not match what you chose when you created your account)
-
-Object Ownership
-
-7. ACLs disabled
-
-Block Public Access settings for this bucket
-
-8. Uncheck 'Block *all* public access'
-9. It will pop up with a small warning symbol underneath, read the contents 
-10. Check the box for 'I acknowledge that the current settings might result in this bucket and the objects within becoming public.' to continue 
-
-Bucket Versioning
-
-11. Disable
-
-Tags
-
-12. Tags are optional
-
-Default encryption
-
-13. Disable
-
-Advanced settings
-
-14. Object lock - Disable
-
-15. Click Create Bucket
-
-Upload CSV to bucket
-
-1. Click the name of your bucket and then click Upload
-
-2. Click Add files
-
-3. Add the CSV from its location on your machine
-
-4. Click Upload and it will display an upload status and then you can click Close
-
-5. Now the bucket is up and running in the AWS cloud and ready to be accessed
-
-
-
-
-
 ## Getting Started
+You will need to run dashboard on your local server
 
+1. Download the repo in your preferred manner.
+
+2. In the folder app.py you will open the Inigrated terminal and use the following commands one at a time:
+
+```
+$ conda activate PythonData
+```
+```
+$ python app.py
+```
+3. Click on the local server to bring up the website
 
 ![image]()
 
@@ -163,8 +120,6 @@ scrape
 plotly graph
 
 ![image]()
-
-## Findings
 
 ## Future Considerations
 
@@ -193,20 +148,13 @@ used accordingly.
 
 https://github.com/evagian/Myopia-study-classification-logistic-regression-R
 
-Images: (including images in slides)
+Images:
 
 https://unsplash.com/photos/qmnpqDwla_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 https://www.freepik.com/free-vector/realistic-eye-anatomy-infographics_6405883.htm#page=3&query=human%20eye%20anatomy&position=0&from_view=search
 
 https://unsplash.com/photos/aVvZJC0ynBQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
-
-https://unsplash.com/photos/RdaKT5RtUk8
-
-https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/avoid-eye-and-back-strain-from-the-computer.aspx
-
-https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
-
 
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mward95/Team_project_2/blob/main/MIT%20License/MIT%20License.txt)

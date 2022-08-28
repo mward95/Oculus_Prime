@@ -139,8 +139,8 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             ticks: 'outside', 
             dtick: .1,
             title: 'LT & DiopterHR', 
-            range: [2.9,4.2],
-            // autorange: true,
+            // range: [19,25],
+            autorange: true,
         },
         yaxis2:{
             title: "Myopic Patients ",
@@ -151,7 +151,7 @@ d3.json("./static/data1/json-fixer.json").then(function(data){
             range: [0, 3],
           
         },
-        title: '<b>Children with/without Myopia vs. Lens Thickness (LT) <br> Bubble Size = [DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR]</b>'
+        title:'Lens Thickness (LT) & Hrs of Diopter activities - DIOPTERHR = 3× ( READHR + STUDYHR) + 2 × COMPHR + TVHR'
     }
     console.log(trace5)
     Plotly.newPlot('plot5', trace5, layout)

@@ -89,7 +89,7 @@ Setups:
 - Google:
     - Google Colaboratory (open through Google Drive)
 
-Tools & languages: PySpark, Google Colab, SQL, JavaScript, Plotly, HTML, matplotlib, Seaborn, Sci-Kit Learn
+Tools & languages: PySpark, Google Colab, SQL, JavaScript, Plotly, HTML, pandas, pathlib, matplotlib, Seaborn, Sci-Kit Learn
 
 [back to top](#table-of-contents)
 
@@ -187,6 +187,14 @@ df.write.json("users_json.json")
 [back to top](#table-of-contents)
 
 ## Machine Learning
+
+- Start with the 'Machine_Learning' folder
+- We will run all of the .ipynb files in Google Colab
+- Order to run notebooks: Supervisedlearning0, SupervisedLearning, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
+
+- Supervised Learning 
+
+1. 
 
 ## Findings
 

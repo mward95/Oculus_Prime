@@ -200,8 +200,10 @@ df.write.json("users_json.json")
 
 ## Features
 
-Plotly Graphs
-![image]()
+Interactive Plotly Graphs
+![](images/algraph.png)
+![](images/algraphboth.png)
+![](images/algraphmomdad.png)
 
 Tableau
 ![image]()

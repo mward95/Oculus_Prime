@@ -6,11 +6,13 @@
 
 - [Background](#background)
 - [Dataset](#dataset)
-- [Predictions and Purpose](#predictions)
+- [Purpose and Predictions](#purpose)
 - [Installation](#installation)
-- [Getting Started](#getting)
-- [Extract, Transform, Load](#extract,transform,load)
+- [Extract, Transform, Load](#extract-transform-load)
+- [Machine Learning](#machine-learning)
+- [Findings](#findings)
 - [Features](#features)
+- [Future Considerations](#future-considerations)
 - [Credits](#credits)
 - [Badges](#badges)
 
@@ -58,13 +60,15 @@ Source: Hosmer, D.W., Lemeshow, S. and Sturdivant, R.X. (2013) Applied Logistic 
 
 ![](images\human-eye2.jpg)
 
-## Predictions and Purpose
+[back to top](#table-of-contents)
 
-We have two predictions for supervised machine learning models. We hypothesize that Random Forest Classification and Logistic Regression models will perform with high accuracies. A Random Forest model should be able to correctly bin the data due to uncorrelated features categorizing the input. Also, for unsupervised machine learning, we hypothesize that a Neural Network model will perform with the highest accuracy and provide the best model since we will be able to fit and hypertune it.
-
-We are predicting that a Linear Regression model would perform the worst due to allowing outliers to effect its predictive outcomes.
+## Purpose
 
 The purpose of the exploration of this medical dataset is to get as close to FDA accuracy standards as possible with our machine learning models. Our experiments will use supervised and unsupervised machine learning to build and test models with the goal of getting an accuracy from 90-95%
+
+## Predictions
+
+We have two predictions for supervised machine learning models. We hypothesize that Random Forest Classification and Logistic Regression models will perform with high accuracies. A Random Forest model should be able to correctly bin the data due to uncorrelated features categorizing the input. Also, for unsupervised machine learning, we hypothesize that a Neural Network model will perform with the highest accuracy and provide the best model since we will be able to fit and hypertune it.
 
 ![](images/david-travis-glasses-unsplash.jpg)
 
@@ -85,9 +89,11 @@ Setups:
 - Google:
     - Google Colaboratory (open through Google Drive)
 
-Tools & languages: PySpark, Google Colab, SQL, postgres, PgAdmin, JavaScript, Plotly, HTML, matplotlib, Seaborn, Sci-Kit Learn
+Tools & languages: PySpark, Google Colab, SQL, JavaScript, Plotly, HTML, matplotlib, Seaborn, Sci-Kit Learn
 
-## Extract, Transform, Load
+[back to top](#table-of-contents)
+
+## Extract-Transform-Load
 
 1. Clone this repository to your machine 
 
@@ -142,29 +148,59 @@ Upload CSV to bucket
 
 5. Now the bucket is up and running in the AWS cloud and ready to be accessed
 
+Google Colaboratory
 
+1. Through your Google Drive open a new page in Google Colaboratory (Google Colab for short) 
 
+2. Click the '+ New' --> Scroll to 'More' --> Click Google Colaboratory or if you do not have it added go to 'Connect More Apps' and you can type it in the search bar and add it to your list from there
 
+3. After opening a new page in Google Colab go to 'File' --> 'Upload notebook' --> 'Choose File'
 
-## Getting Started
+4. Find where you saved the repository and click to add the Myopia.ipynb then click 'Open'
 
+5. All libraries and dependencies are loaded, run the cells until you get to cell 4 where you see we are reading in the CSV file from our S3 bucket
 
-![image]()
+Our code looks like the following 
+```
+url = "https://myopia.s3.amazonaws.com/Copy_of_myopia.csv"
+```
+It is possible you will need to change where we have 'myopia' to the specific name of your S3 bucket, also you may need to change where it says 'Copy_of_myopia.csv' to the name of the CSV you loaded into your bucket
 
+After altering the names (if you need to) run the code and the first 10 rows of the CSV will appear in dataframe form.
+
+6. Running the next line will inpect the data to look to drop duplicates and incomplete rows
+
+7. Running the next cell ``` df.printSchema() ``` will examine the schema
+
+8. After looking at the data we conclude that we don't need to drop any additional rows or columns from here
+
+9. We can now save it as a JSON file by running the next line
+```
+df.write.json("users_json.json")
+```
+10. There is additional code below this line you can run if you wish to save this data into a database through AWS. Ultimately we did not need this step but it is available and works with the postgres option and will run on PgAdmin
+
+11. You can change the name of the JSON file after saving it, also it may need to be cleaned and/or corrected in VS Code, you can use the 'Find and Replace' tool to find all of the ``` } ``` and replace with ``` }, ``` also you will need an opening bracket ```  [   ``` and a closing bracket ```  ]  ``` at the beginning and end of the JSON 
+
+12. Now you are ready to start machine learning!
+
+[back to top](#table-of-contents)
+
+## Machine Learning
+
+## Findings
 
 ## Features
 
+Plotly Graphs
 ![image]()
 
-scrape
-
+Tableau
 ![image]()
 
-plotly graph
-
+Website
 ![image]()
 
-## Findings
 
 ## Future Considerations
 
@@ -207,6 +243,7 @@ https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/av
 
 https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
 
-
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mward95/Team_project_2/blob/main/MIT%20License/MIT%20License.txt)
+
+[back to top](#myopia-in-children)

@@ -253,6 +253,8 @@ https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/av
 
 https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
 
+https://unsplash.com/photos/_kdTyfnUFAc (light bulb)
+
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mward95/Team_project_2/blob/main/MIT%20License/MIT%20License.txt)
 

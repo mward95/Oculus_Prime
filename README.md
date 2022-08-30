@@ -288,7 +288,7 @@ Since we were technically working with medical data, our future goal would be to
 ## Credits
 Team members:
 
-Mariama Diallo https://github.com/diallomt193 - Supervised, Unsupervised, and Neural Network coding, set up Google Colab notebooks, executed visualizations for machine learning, researched and explains Logistic Regression and Random Forest, colaborated on final findings of machine learning algorithms
+Mariama Diallo https://github.com/diallomt193 - Supervised, Unsupervised, and Neural Network coding, AWS, S3 bucket set up, set up Google Colab notebooks, executed visualizations for machine learning, researched and explains Logistic Regression and Random Forest, colaborated on final findings of machine learning algorithms
 
 Matthew Ward https://github.com/mward95 - Field expertise in dataset content, gathered dataset information, HTML/CSS code wizardry, set up links and deployed live website, created and embedded Tableau data visualizations, colaborated on final findings of machine learning algorithms
 

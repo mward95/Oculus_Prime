@@ -195,11 +195,62 @@ df.write.json("users_json.json")
 - We will run all of the .ipynb files in Google Colab
 - Order to run notebooks: Supervisedlearning0, SupervisedLearning, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
 
-- Supervised Learning 
+<!-- - Supervised Learning 
 
 1. 
+-->
 
 ## Findings
+
+### Supervised:
+
+Logistic Regression:
+
+- The model score was 92.7% accurate when using the Logistic Regression model.
+
+- From what the model predicted, the confusion matrix validated the accuracy of the model.
+
+Random Forest:
+
+- This model gave the highest accuracy score of 93.5%.
+
+- We iterated an n_estimater(number of trees in the random forest) we found that 30 was the best number for this model to get the best model score.The confusion matrix validated the accuracy of the model.
+
+- The feature importance graph shows the most important relivant feature shows SPHEQ as the most important feature affecting the myopic outcome.
+
+### Unsupervised:
+
+- We tried 3 different models first k_means with PCA, then DBSCAN(Density-Based Spatial Clustering of Applications with Noise) and HDBSCAN(Hierarchical Density-Based Spatial Clustering of Applications with Noise)
+
+- Since there was no score, the results are up to how the vizulation of the clustering looks
+
+- From the elbow curve it resulted in 3 clusters
+
+- DBSCAN - but this graph uses KNN (Nearest Neighbor- model) to estimate the best epsilon value to run DBSCAN
+
+- Once we found the eps value through the knee estimation - we developed a for loop to see how min_samples varied the clustering for DBSCAN
+
+- HDBSCAN - we made a loop to find out the best min_cluster_size visually
+
+### Deep Learning with Neural Network
+
+- First what was built manually was layers and neurons, that resulted in 87.7% accuracy.
+
+- USE Keras-Tuner to optimize layers, neurons and activation model to improve model accuracy
+
+- This was the result after using Keras-Tuner to optimize the layers:
+
+    - val_accuracy: 87.1%
+    - Best val_accuracy So Far: 89.7%
+
+### Overall outcome for model accuracies:
+
+Random Forest had the highest actual accuracy but overfit the data, Random Forest would be our secondary top choice for model use with future data
+
+Logistic Regression had the highest accuracy score without overfitting and would be a primary candidate to use with more current and future myopia data
+
+Neural Networks performed well but even after optimization and tuning it did not get above 90% accuracy score.
+
 
 ## Features
 

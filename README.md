@@ -285,13 +285,13 @@ In the future, we would implement
 ## Credits
 Team members:
 
-Mariama Diallo https://github.com/diallomt193
+Mariama Diallo https://github.com/diallomt193 - Supervised, Unsupervised, and Neural Network coding, set up Google Colab notebooks, executed visualizations for machine learning, researched and explains Logistic Regression and Random Forest, colaborated on final findings of machine learning algorithms
 
-Matthew Ward https://github.com/mward95
+Matthew Ward https://github.com/mward95 - Field expertise in dataset content, gathered dataset information, HTML/CSS code wizardry, set up links and deployed live website, created and embedded Tableau data visualizations, colaborated on final findings of machine learning algorithms
 
-Harshad Patil https://github.com/harsh-env
+Harshad Patil https://github.com/harsh-env - Machine Learning enthusiast, gathered extensive information on supervised and unsupervised machine learning alongside other deep learning techniques like neural networks and using keras tuner and tensorflow. Executed coding and notebooks for all machine learning algorithms. Javascript coding wizardry for bubble graphs and data visualizations
 
-Stefanie Gagnon https://github.com/skgag1216
+Stefanie Gagnon https://github.com/skgag1216 - Expert level README content builder, organized sequence of project, support for HTML coding, support with machine learning coding, created visual presentation with Google Slides, analyze final outcomes for explanation 
 
 ## Resources
 

@@ -281,8 +281,25 @@ https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/av
 
 https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
 
+https://www.geeksforgeeks.org/difference-between-supervised-and-unsupervised-learning/
+
+https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c
+
+https://towardsdatascience.com/understanding-random-forest-58381e0602d2
+
+https://www.w3schools.com/python/python_ml_confusion_matrix.asp
+
+https://www.youtube.com/watch?v=2NEu9dbM4A8&t=2s PCA
+
+https://www.youtube.com/watch?v=JxgmHe2NyeY&t=21834s Complete Machine Learning
+
 ### Coding:
 
+https://www.w3schools.com/
+
+https://scikit-learn.org
+
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
 
 
 ## Badges

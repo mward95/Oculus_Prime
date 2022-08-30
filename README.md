@@ -242,6 +242,7 @@ Random Forest:
 
     - val_accuracy: 87.1%
     - Best val_accuracy So Far: 89.7%
+    - After another execution of code with hypertuning with tensorflow and tensorboard a final val_accuracy of 90.3% was attained
 
 ### Overall outcome for model accuracies:
 
@@ -280,7 +281,9 @@ https://docs.google.com/presentation/d/1qJccpOSY6FG3RJnVb3g6MI5MzRsUbIHjSul75_lc
 
 ## Future Considerations
 
-In the future, we would implement
+In the future we would like to implement our code on a more current dataset. We would be interested in reusing, and recycling our machine learning code again on a larger, recent dataset. We think that using a larger dataset with not only more data points but also a higher percentage of positive outcomes, like a dataset with more outcomes of myopia being present, would help train our machine learning algorithms to have higher accuracy scores. A larger dataset might also remedy the overfitting that we were experiencing when running the Random Forest model. 
+
+Since we were technically working with medical data, our future goal would be to aim for accuracy outcomes even higher than our goal during this run of our project. The FDA requires extremely high accuracy since predictions would be tied to a person's medical diagnosis and possible treatment options.
 
 ## Credits
 Team members:
@@ -291,7 +294,7 @@ Matthew Ward https://github.com/mward95 - Field expertise in dataset content, ga
 
 Harshad Patil https://github.com/harsh-env - Machine Learning enthusiast, gathered extensive information on supervised and unsupervised machine learning alongside other deep learning techniques like neural networks and using keras tuner and tensorflow. Executed coding and notebooks for all machine learning algorithms. Javascript coding wizardry for bubble graphs and data visualizations
 
-Stefanie Gagnon https://github.com/skgag1216 - Expert level README content builder, organized sequence of project, support for HTML coding, support with machine learning coding, created visual presentation with Google Slides, analyze final outcomes for explanation 
+Stefanie Gagnon https://github.com/skgag1216 - Expert level README content builder, organized sequence of project, support for HTML coding, support with machine learning coding, created visual presentation with Google Slides, analyze final outcomes and future considerations for explanation 
 
 ## Resources
 

@@ -19,7 +19,7 @@
   <a href="link1.html" class="w3-bar-item w3-button">Data Vizualization</a>
   <a href="link2.html" class="w3-bar-item w3-button">Machine Learning</a>
   <a href="link3.html" class="w3-bar-item w3-button">About</a>
-  <a href="link4.html" class="w3-bar-item w3-button">Link 4</a>
+  <!-- <a href="link4.html" class="w3-bar-item w3-button">Link 4</a> -->
 </nav>
 <!-- #################################### -->
 <!-- Header -->
@@ -74,10 +74,11 @@
 
 <div class="w3-padding w3-white w3-display-container">
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
-  <p>We choose to start with logistic regression because the model works best for its ability to answer a yes or no question, Our teams over arching question was does the child have myopia yes or no so this model worked best for us.</p>
+  <p>The model score was 92.7% accurate when using the Logistic Regression model. </p>
+  <p>From what the model predicted, the confusion matrix validated the accuracy of the model.</p>
   <p></p>
-  <p></p>
-  <img class="mySlides w3-animate-opacity" src="images\logisticregression.png" style="width:40%">
+  <img class="mySlides w3-animate-opacity" src="images\cmatrixLR.png" style="width:40%">
+  <img class="mySlides w3-animate-opacity" src="images\LRtraintest.png" style="width:40%">
 </div>
 
 <footer class="w3-container w3-blue-grey">
@@ -87,7 +88,6 @@
 <!-- #################################### -->
 <!-- Random Forest -->
 <!-- #################################### -->
-
 <div class="w3-row-padding">
 
 <div class="w3-half">
@@ -99,14 +99,20 @@
   </div>
   <ul class="w3-ul w3-border-top">
     <li>
-      <h3>hi</h3>
-      <p>When running the Random Forest model we got a training score of 1.0 which means that we over fit the data. We showed the model too much of the data and it become too accurate for this specfic set of data only.</p>
-      <p></p>
+      <!-- <h3>hi</h3> -->
+      <!-- <p>When running the Random Forest model we got a training score of 1.0 which means that we over fit the data. We showed the model too much of the data and it become too accurate for this specfic set of data only.</p> -->
+      <!-- <p>This model gave the highest accuracy score compared to the machine learning models  ran.</p> -->
+      <p>This model gave the highest accuracy score of 93.5%. </p>
+      <p>We iterated an n_estimater(number of trees in the random forest) we found that 30 was the best number for this model to get the best model score.The confusion matrix validated the accuracy of the model.</p>
+      <p>The feature importance graph shows the most important relivant feature shows SPHEQ as the most important feature affecting the myopic outcome.</p>
     </li>
     <li>
       <h3></h3>
       <p></p>
-      <img class="mySlides w3-animate-opacity" src="images\randomforest.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\n_estimatorsRF.png" style="width:90%">
+      <img class="mySlides w3-animate-opacity" src="images\decisiontreeRF.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\cmatrixRF.png" style="width:40%">
+      <img class="mySlides w3-animate-opacity" src="images\featimportanceRF.png" style="width:50%">
     </li>
     <li>
       <h3></h3>
@@ -118,23 +124,31 @@
 </div>
 
 <!-- #################################### -->
-<!-- Neural Network -->
+<!-- Unsupervised Machine Learning -->
 <!-- #################################### -->
 <div class="w3-half">
 <div class="w3-card white">
   <div class="w3-container w3-theme">
-    <h3>Neural Network</h3>
+    <h2>Unsupervised Machine Learning</h2>
   </div>
   </div>
   <ul class="w3-ul w3-border-top">
     <li>
-      <h3>hi</h3>
-      <p>this is where our info will go</p>
+      <p>We tried 3 different models first k_means with PCA, then DBSCAN(Density-Based Spatial Clustering of Applications with Noise) and HDBSCAN(Hierarchical Density-Based Spatial Clustering of Applications with Noise)  </p>
+  <p>Since there was no score, the results are up to how the vizulation of the clustering looks</p>
+  <p>From the elbow curve it resulted in 3 clusters</p>
+  <p>DBSCAN - but this graph uses KNN (Nearest Neighbor- model) to estimate the best epsilon value to run DBSCAN </p>
+  <p>once we found the eps value through the knee estimation - we developed a for loop to see how min_samples varied the clustering for DBSCAN</p>
+  <p>HDBSCAN - we made a loop to find out the best min_cluster_size visually</p>
     </li>
     <li>
       <h3></h3>
       <p></p>
-      <img class="mySlides w3-animate-opacity" src="images\NN_accuracy.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\myopiaclusters.png" style="width:70%">
+      <!-- <img class="mySlides w3-animate-opacity" src="images\elbowcurve.png" style="width:70%"> -->
+      <!-- <img class="mySlides w3-animate-opacity" src="images\NN_accuracy.png" style="width:70%"> -->
+      <!-- <img class="mySlides w3-animate-opacity" src="images\NN_accuracy.png" style="width:70%"> -->
+      <br>
       <br>
       <br>
       <br>
@@ -150,24 +164,32 @@
 </div>
 
 <!-- #################################### -->
-<!-- Unsupervised Machine Learning -->
+<!-- Neural Network -->
 <!-- #################################### -->
 <header class="w3-container w3-blue-grey">
-  <h2>Unsupervised Machine Learning</h2>
+  <h3>Neural Network</h3>
 </header>
 
 <div class="w3-padding w3-white w3-display-container">
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
-  <h2>London</h2>
-  <p>We choose because of the ability for its ability to give a yes or no answer, to answer questions like does the child have myopia yes or no</p>
-  <p></p>
-  <p>By the way, you can add a close icon to all containers if you want the ability to hide them. Look to your right!</p>
-  <img class="mySlides w3-animate-opacity" src="images\logisticregression.png" style="width:40%">
-</div>
+  
+  
+  
+      <p>First what was built manually was layers and neurons, that resulted in 87.7% accuracy.</p>
+      <p>USE Keras-Tuner to optimize layers, neurons and activation model to improve model accuracy</p>
+      <p>This was the result after using Keras-Tuner to optimize the layers etc</p>
+  
+      <img class="mySlides w3-animate-opacity" src="images\NN_accuracy.png" style="width:30%">
+      <img class="mySlides w3-animate-opacity" src="images\nn_accuracy_graph.png" style="width:30%">
+      <img class="mySlides w3-animate-opacity" src="images\nn_acccuracy_code.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\nn_neurons.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\nn_layer_optim.png" style="width:70%">
+      <img class="mySlides w3-animate-opacity" src="images\nn_layer_optim2.png" style="width:70%">
+  </div>
 
 <footer class="w3-container w3-blue-grey">
-  <h5>Footer</h5>
-  <p class="w3-opacity">Footer information goes here</p>
+
+  <p class="w3-opacity"></p>
 </footer>
 
 <br>

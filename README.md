@@ -12,6 +12,7 @@
 - [Machine Learning](#machine-learning)
 - [Findings](#findings)
 - [Features](#features)
+- [Presentation](#presentation)
 - [Future Considerations](#future-considerations)
 - [Credits](#credits)
 - [Badges](#badges)
@@ -215,6 +216,11 @@ https://public.tableau.com/app/profile/matthew7863/viz/project4_16613880701480/D
 Website
 ![image]()
 
+## Presentation
+
+Presentation link:
+https://docs.google.com/presentation/d/1qJccpOSY6FG3RJnVb3g6MI5MzRsUbIHjSul75_lc4Nc/edit?usp=sharing
+
 
 ## Future Considerations
 
@@ -233,7 +239,7 @@ Stefanie Gagnon https://github.com/skgag1216
 
 ## Resources
 
-Data:
+### Data:
 
 Hosmer, D.W., Lemeshow, S. and Sturdivant, R.X. (2013) Applied Logistic Regression: Third Edition
 
@@ -243,7 +249,9 @@ used accordingly.
 
 https://github.com/evagian/Myopia-study-classification-logistic-regression-R
 
-Images: (including images in slides)
+### Images: 
+
+(including images in slides)
 
 https://unsplash.com/photos/qmnpqDwla_E?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
@@ -260,6 +268,20 @@ https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-
 https://unsplash.com/photos/_kdTyfnUFAc (light bulb) 
 
 https://unsplash.com/photos/qzgN45hseN0 (forest)
+
+### Information:
+
+https://www.aao.org
+
+https://www.aao.org/eye-health/diseases/myopia-nearsightedness
+
+https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/avoid-eye-and-back-strain-from-the-computer.aspx
+
+https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
+
+### Coding:
+
+
 
 ## Badges
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mward95/Team_project_2/blob/main/MIT%20License/MIT%20License.txt)

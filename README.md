@@ -196,12 +196,9 @@ Optional: You can use AWS to create a RDS with postgres and connect through PgAd
 - Start with the 'Machine_Learning' folder
 - We will run all of the .ipynb files in Google Colab
 - Start with Supervised Learning, then move to Unsupervised Learning methods, lastly run the Deep Learning 
-- Order to run notebooks: Supervisedlearning0, SupervisedLearning, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
-
-<!-- - Supervised Learning 
-
-1. 
--->
+- Order to run notebooks: SupervisedLearning, Supervisedlearning0, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
+- Use the dependencies provided to start your code 
+- You may need to change the file_path ``` file_path = Path("/content/Copy_of_myopia.csv") ``` where 'content' and 'Copy_of_myopia.csv' are make you have the name of the folder your myopia csv is located in and the name of your copy of the myopia csv if it differs from the one we provided 
 
 ## Findings
 
@@ -335,7 +332,11 @@ https://unsplash.com/photos/_kdTyfnUFAc (light bulb)
 
 https://unsplash.com/photos/qzgN45hseN0 (forest)
 
+https://commons.wikimedia.org/wiki/File:Postgresql_elephant.svg (AWS, Google Colab, Postgres)
+
 ### Information:
+
+Ocular Content:
 
 https://www.aao.org
 
@@ -344,6 +345,10 @@ https://www.aao.org/eye-health/diseases/myopia-nearsightedness
 https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/avoid-eye-and-back-strain-from-the-computer.aspx
 
 https://www.healthychildren.org/English/family-life/Media/Pages/Unhealthy-Video-Gaming.aspx
+
+https://pubmed.ncbi.nlm.nih.gov/31943280/#:~:text=Seven%20studies%20found%20an%20association,children%20using%20screens%20and%20myopia. 
+
+Machine Learning:
 
 https://www.geeksforgeeks.org/difference-between-supervised-and-unsupervised-learning/
 
@@ -360,6 +365,8 @@ https://www.youtube.com/watch?v=JxgmHe2NyeY&t=21834s Complete Machine Learning
 ### Coding:
 
 https://www.w3schools.com/
+
+https://www.tutorialspoint.com/machine_learning_with_python/machine_learning_with_python_correlation_matrix_plot.htm
 
 https://scikit-learn.org
 

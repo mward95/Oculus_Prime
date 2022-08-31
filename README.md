@@ -194,8 +194,11 @@ Optional: You can use AWS to create a RDS with postgres and connect through PgAd
 ## Machine Learning
 
 - Start with the 'Machine_Learning' folder
+
 - We will run all of the .ipynb files in Google Colab
+
 - Start with Supervised Learning, then move to Unsupervised Learning methods, lastly run the Deep Learning 
+
 - Order to run notebooks: 
 
     - SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, 
@@ -206,7 +209,12 @@ Optional: You can use AWS to create a RDS with postgres and connect through PgAd
 
 
 - Use the dependencies provided to start your code 
+
 - You may need to change the file_path ``` file_path = Path("/content/Copy_of_myopia.csv") ``` where 'content' and 'Copy_of_myopia.csv' are make you have the name of the folder your myopia csv is located in and the name of your copy of the myopia csv if it differs from the one we provided 
+
+- We use ``` .corr() ``` to find the relationship between each feature (column) in the dataset in each supervised learning notebook, this is what's needed to create the heatmap using the seaborn library
+
+- In the second supervised learning notebook (SupervisedLearning-RF-hp) we further adjust how many trees there are in the forest with ``` n_estimator ``` the default is 20, we change it to 30 and this adjustment fixes our issue with overfitting the data that happened in the first notebook
 
 ## Findings
 

@@ -214,7 +214,7 @@ Random Forest:
 
 - This model gave the highest accuracy score of 93.5%.
 
-- We iterated an n_estimater(number of trees in the random forest) we found that 30 was the best number for this model to get the best model score.The confusion matrix validated the accuracy of the model.
+- We iterated an n_estimater (number of trees in the random forest) we found that 30 was the best number for this model to get the best model score.The confusion matrix validated the accuracy of the model.
 
 - The feature importance graph shows the most important relivant feature shows SPHEQ as the most important feature affecting the myopic outcome.
 
@@ -236,7 +236,7 @@ Random Forest:
 
 - First what was built manually was layers and neurons, that resulted in 87.7% accuracy.
 
-- USE Keras-Tuner to optimize layers, neurons and activation model to improve model accuracy
+- Use Keras-Tuner to optimize layers, neurons and activation model to improve model accuracy
 
 - This was the result after using Keras-Tuner to optimize the layers:
 
@@ -246,11 +246,11 @@ Random Forest:
 
 ### Overall outcome for model accuracies:
 
-Random Forest had the highest actual accuracy but overfit the data, Random Forest would be our secondary top choice for model use with future data
+Random Forest had the highest overall accuracy, Random Forest would be our primary choice for model use with future data
 
-Logistic Regression had the highest accuracy score without overfitting and would be a primary candidate to use with more current and future myopia data
+Logistic Regression comes in second and is another good candidate to use for future data predictions because of it's low variance and low bias.
 
-Neural Networks performed well but even after optimization and tuning it did not get above 90% accuracy score.
+Neural Networks performed well but even after optimization and tuning it did not get above a 91% accuracy score.
 
 
 ## Features
@@ -285,9 +285,9 @@ https://docs.google.com/presentation/d/1qJccpOSY6FG3RJnVb3g6MI5MzRsUbIHjSul75_lc
 
 ## Future Considerations
 
-In the future we would like to implement our code on a more current dataset. We would be interested in reusing, and recycling our machine learning code again on a larger, recent dataset. We think that using a larger dataset with not only more data points but also a higher percentage of positive outcomes, like a dataset with more outcomes of myopia being present, would help train our machine learning algorithms to have higher accuracy scores. A larger dataset might also remedy the overfitting that we were experiencing when running the Random Forest model. 
+In the future we would like to implement our code on a more recent dataset from current and ongoing studies.  We would be interested in reusing, and recycling our machine learning code on a larger dataset. We think that using a larger dataset with not only more data points but also a higher percentage of positive outcomes, like a dataset with more outcomes of myopia being present, would help train our machine learning algorithms to have higher accuracy scores. A larger dataset might also remedy the overfitting that we were experiencing when running the initial Random Forest model. (We were able to remedy the overfitting with changing the number of trees to 30 instead of using the default 20)
 
-Since we were technically working with medical data, our future goal would be to aim for accuracy outcomes even higher than our goal during this run of our project. The FDA requires extremely high accuracy since predictions would be tied to a person's medical diagnosis and possible treatment options.
+Since we were technically working with medical data, our future goal would be to aim for accuracy outcomes even higher than our goal during this run of our project. The FDA requires extremely high accuracy. These types of machine learning predictions would be tied to a person's medical diagnosis and possible treatment options.
 
 ## Credits
 Team members:

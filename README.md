@@ -187,12 +187,15 @@ df.write.json("users_json.json")
 
 12. Now you are ready to start machine learning!
 
+Optional: You can use AWS to create a RDS with postgres and connect through PgAdmin on your machine. We have the app.py file, schema.sql, and templates folder available and ready to use. We originally started with this and it is an option to connect and run if you choose. 
+
 [back to top](#table-of-contents)
 
 ## Machine Learning
 
 - Start with the 'Machine_Learning' folder
 - We will run all of the .ipynb files in Google Colab
+- Start with Supervised Learning, then move to Unsupervised Learning methods, lastly run the Deep Learning 
 - Order to run notebooks: Supervisedlearning0, SupervisedLearning, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
 
 <!-- - Supervised Learning 

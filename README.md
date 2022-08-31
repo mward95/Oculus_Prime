@@ -260,6 +260,8 @@ Logistic Regression comes in second and is another good candidate to use for fut
 
 Neural Networks performed well but even after optimization and tuning it did not get above a 91% accuracy score.
 
+Unsupervised learning models displayed minimum clusters well but are not a great fit to use with this kind of data and training for classification accuracy.
+
 
 ## Features
 

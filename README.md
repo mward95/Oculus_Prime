@@ -334,6 +334,12 @@ https://unsplash.com/photos/qzgN45hseN0 (forest)
 
 https://commons.wikimedia.org/wiki/File:Postgresql_elephant.svg (AWS, Google Colab, Postgres)
 
+https://cdn.pixabay.com/photo/2018/09/24/10/19/system-3699542_1280.jpg (neural network)
+
+https://cdn.pixabay.com/photo/2013/07/18/10/55/business-163464_1280.jpg 
+
+https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80 (professor dog)
+
 ### Information:
 
 Ocular Content:

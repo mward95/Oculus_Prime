@@ -196,7 +196,15 @@ Optional: You can use AWS to create a RDS with postgres and connect through PgAd
 - Start with the 'Machine_Learning' folder
 - We will run all of the .ipynb files in Google Colab
 - Start with Supervised Learning, then move to Unsupervised Learning methods, lastly run the Deep Learning 
-- Order to run notebooks: SupervisedLearning, Supervisedlearning0, SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, UnsupervisedLearning, Myopia_nn1, Unsupervised_Learn-KMeans-hp, Unsupervised_Learn-KMeans-hp1, Unsupervised_Learn-DBSCAN-hp
+- Order to run notebooks: 
+
+    - SupervisedLearning-LR-hp, SupervisedLearning-RF-hp, 
+
+    - DeepLearning_NN1, DeepLearning_NN2, 
+
+    - Unsupervised_Learn-KMeans-hp2, Unsupervised_Learn-DBSCAN-hp1, Unsupervised_Learn-HDBSCAN-hp
+
+
 - Use the dependencies provided to start your code 
 - You may need to change the file_path ``` file_path = Path("/content/Copy_of_myopia.csv") ``` where 'content' and 'Copy_of_myopia.csv' are make you have the name of the folder your myopia csv is located in and the name of your copy of the myopia csv if it differs from the one we provided 
 
@@ -216,13 +224,13 @@ Random Forest:
 
 - We iterated an n_estimater (number of trees in the random forest) we found that 30 was the best number for this model to get the best model score.The confusion matrix validated the accuracy of the model.
 
-- The feature importance graph shows the most important relivant feature shows SPHEQ as the most important feature affecting the myopic outcome.
+- The feature importance graph shows the most important relevant feature shows SPHEQ as the most important feature affecting the myopic outcome.
 
 ### Unsupervised:
 
 - We tried 3 different models first k_means with PCA, then DBSCAN(Density-Based Spatial Clustering of Applications with Noise) and HDBSCAN(Hierarchical Density-Based Spatial Clustering of Applications with Noise)
 
-- Since there was no score, the results are up to how the vizulation of the clustering looks
+- Since there was no score, the results are up to how the visualization of the clustering looks
 
 - From the elbow curve it resulted in 3 clusters
 
@@ -367,6 +375,8 @@ https://www.w3schools.com/python/python_ml_confusion_matrix.asp
 https://www.youtube.com/watch?v=2NEu9dbM4A8&t=2s PCA
 
 https://www.youtube.com/watch?v=JxgmHe2NyeY&t=21834s Complete Machine Learning
+
+https://www.geeksforgeeks.org/clustering-in-machine-learning/
 
 ### Coding:
 
